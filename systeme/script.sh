@@ -1,6 +1,6 @@
 
 # Afficher un message pour demander l'emplacement du projet
-echo "Où voulez-vous enregistrer le projet ? (Chemin absolu ex : /c/dossier)"
+echo "Où voulez-vous enregistrer le projet ?"
 # Lire l'emplacement racine
 read directory
 
@@ -22,12 +22,3 @@ touch index.html style.css readme.md
 
 # Afficher un message de confirmation
 echo "Le projet a été ajouté."
-
-# Validez les modifications avec le message "Ajout du script.sh"
-git add
-
-# Ajouter les modifications en liste d’attente
-git commit -m "Ajout du script.sh"
-
-# Envoyé les modifications vers le repository GitHub
-git push origin main
