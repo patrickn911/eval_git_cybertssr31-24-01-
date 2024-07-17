@@ -10,12 +10,12 @@ echo "Quel est le nom de votre projet ?"
 read project
 
 # Se déplacer dans le dossier racine
-cd "$C:\Users\nguye\OneDrive\Bureau\eval_git_cybertssr31-24-01-\systeme" || { echo "Le dossier $directory n'existe pas."; exit 1; }
+cd $directory 
 
 # Créer le dossier du projet
-mkdir "$C:\Users\nguye\OneDrive\Bureau\eval_git_cybertssr31-24-01-\systeme"
+mkdir $project
 # Se déplacer dans le dossier du projet
-cd "$project" || { echo "Le dossier $project n'a pas pu être créé."; exit 1; }
+cd $project 
 
 # Créer les fichiers nécessaires
 touch index.html style.css readme.md
